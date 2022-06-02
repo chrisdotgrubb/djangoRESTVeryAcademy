@@ -17,6 +17,8 @@ INSTALLED_APPS = [
 	'django.contrib.staticfiles',
 	'apps.blog',
 	'apps.blog_api',
+	'apps.user',
+	'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -55,6 +57,8 @@ DATABASES = {
 		'NAME': BASE_DIR / 'db.sqlite3',
 	}
 }
+
+AUTH_USER_MODEL = 'user.MyUser'
 
 AUTH_PASSWORD_VALIDATORS = [
 	{
