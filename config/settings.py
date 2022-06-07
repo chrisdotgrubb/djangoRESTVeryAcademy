@@ -20,6 +20,7 @@ INSTALLED_APPS = [
 	'apps.blog_api',
 	'apps.user',
 	'rest_framework',
+	'rest_framework_simplejwt.token_blacklist',
 ]
 
 MIDDLEWARE = [
